@@ -5,74 +5,116 @@
   <title>VOV Temple Website – UI Prototypes</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       margin: 0;
-      padding: 2rem;
+      padding: 2.5rem 1.5rem;
       background: #f8fafc;
       color: #0f172a;
+      display: flex;
+      justify-content: center;
+    }
+    .wrapper {
+      width: 100%;
+      max-width: 920px;
     }
     h1 {
-      margin-bottom: 0.5rem;
+      margin: 0 0 0.5rem;
+      font-size: 2.2rem;
+      letter-spacing: -0.03em;
     }
-    p {
-      margin-bottom: 1.5rem;
+    p.lead {
+      margin: 0 0 2rem;
+      color: #4b5563;
+      font-size: 0.98rem;
     }
     ul {
       list-style: none;
       padding: 0;
       margin: 0;
       display: grid;
-      gap: 1rem;
-      max-width: 480px;
+      gap: 1.2rem;
+      max-width: 560px;
     }
-    a {
+    a.card {
       display: block;
-      padding: 1rem 1.25rem;
-      border-radius: 0.75rem;
-      background: white;
+      padding: 1.25rem 1.5rem;
+      border-radius: 0.9rem;
+      background: #ffffff;
       border: 1px solid #e5e7eb;
       text-decoration: none;
       color: #0f172a;
-      font-weight: 500;
-      box-shadow: 0 4px 12px rgba(15, 23, 42, 0.05);
+      box-shadow: 0 10px 25px rgba(15, 23, 42, 0.06);
+      transition:
+        border-color 0.18s ease,
+        box-shadow 0.18s ease,
+        transform 0.18s ease,
+        background-color 0.18s ease;
     }
-    a span {
+    a.card strong {
       display: block;
-      font-size: 0.85rem;
+      font-size: 1rem;
+      margin-bottom: 0.25rem;
+    }
+    a.card span {
+      display: block;
+      font-size: 0.9rem;
       font-weight: 400;
       color: #6b7280;
-      margin-top: 0.25rem;
+      margin-top: 0.1rem;
+      line-height: 1.35;
     }
-    a:hover {
+    a.card:hover {
       border-color: #f97316;
-      box-shadow: 0 6px 18px rgba(249, 115, 22, 0.12);
+      box-shadow: 0 16px 35px rgba(249, 115, 22, 0.18);
+      transform: translateY(-2px);
+      background-color: #fffbeb;
+    }
+
+    @media (min-width: 768px) {
+      body {
+        padding: 3rem 2.5rem;
+      }
+      h1 {
+        font-size: 2.6rem;
+      }
+      p.lead {
+        font-size: 1rem;
+      }
     }
   </style>
 </head>
 <body>
-  <h1>VOV Temple Website – UI Prototypes</h1>
-  <p>Select a layout to preview for Krishna / the Board:</p>
+  <div class="wrapper">
+    <h1>VOV Temple Website – UI Prototypes</h1>
+    <p class="lead">
+      Select a layout to preview for Krishna and the Board. Each option is a different UI/UX direction
+      for Vishnu Mandir / Voice of Vedas (VOV).
+    </p>
 
-  <ul>
-    <li>
-      <a href="proto-a-darshan-first/">
-        Option A – Darshan First
-        <span>Devotional, image-led homepage with strong puja + donation CTAs.</span>
-      </a>
-    </li>
-    <li>
-      <a href="proto-b-seva-hub/">
-        Option B – Seva &amp; Services Hub
-        <span>Operational view: bookings, donations and services front and centre.</span>
-      </a>
-    </li>
-    <li>
-      <a href="proto-c-campus-community/">
-        Option C – Campus &amp; Community
-        <span>Shows the full VOV campus: temple, seniors’ home, Montessori, clinic, museum &amp; Peace Park.</span>
-      </a>
-    </li>
-  </ul>
+    <ul>
+      <li>
+        <a class="card" href="vov-prototypes/proto-a-darshan-first/">
+          <strong>Option A – Darshan First</strong>
+          <span>Devotional, image-led homepage with strong puja + donation calls to action.</span>
+        </a>
+      </li>
+      <li>
+        <a class="card" href="vov-prototypes/proto-b-seva-hub/">
+          <strong>Option B – Seva &amp; Services Hub</strong>
+          <span>Operational view with bookings, donations, and services front and centre.</span>
+        </a>
+      </li>
+      <li>
+        <a class="card" href="vov-prototypes/proto-c-campus-community/">
+          <strong>Option C – Campus &amp; Community</strong>
+          <span>Shows the full VOV campus: temple, seniors’ home, Montessori, clinic, museum &amp; Peace Park.</span>
+        </a>
+      </li>
+    </ul>
+  </div>
 </body>
 </html>
