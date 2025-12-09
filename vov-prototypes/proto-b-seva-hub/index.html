@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vishnu Mandir – Seva & Services Hub Prototype</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-slate-50 text-slate-900 flex flex-col">
+  <!-- Prototype Banner -->
+  <div class="bg-amber-50 border-b border-amber-200 text-xs text-amber-900 py-2">
+    <div class="max-w-6xl mx-auto px-4 flex justify-between items-center">
+      <span>This is a design prototype for Vishnu Mandir / VOV – content and visuals are illustrative.</span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="bg-white/80 backdrop-blur border-b border-slate-200 sticky top-0 z-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="h-10 w-10 rounded-lg bg-gradient-to-br from-amber-600 to-teal-500 text-white flex items-center justify-center font-semibold">V</div>
+        <div>
+          <div class="text-base font-semibold text-slate-900">Vishnu Mandir</div>
+          <div class="text-xs text-slate-600">Voice of Vedas (VOV)</div>
+        </div>
+      </div>
+      <button aria-label="Toggle menu" class="md:hidden inline-flex items-center justify-center h-10 w-10 rounded-md border border-slate-300 text-slate-700" onclick="document.getElementById('mobile-nav').classList.toggle('hidden')">
+        <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+      </button>
+      <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-800">
+        <a href="#services" class="hover:text-amber-700">Services</a>
+        <a href="#quick-info" class="hover:text-amber-700">Quick info</a>
+        <a href="#seva" class="hover:text-amber-700">Seva</a>
+        <a href="#events-classes" class="hover:text-amber-700">Events & Classes</a>
+        <a href="#stay-connected" class="hover:text-amber-700">Stay connected</a>
+      </nav>
+    </div>
+    <nav id="mobile-nav" class="md:hidden hidden border-t border-slate-200 bg-white px-4 py-3 space-y-2 text-sm font-semibold text-slate-800">
+      <a href="#services" class="block hover:text-amber-700">Services</a>
+      <a href="#quick-info" class="block hover:text-amber-700">Quick info</a>
+      <a href="#seva" class="block hover:text-amber-700">Seva</a>
+      <a href="#events-classes" class="block hover:text-amber-700">Events & Classes</a>
+      <a href="#stay-connected" class="block hover:text-amber-700">Stay connected</a>
+    </nav>
+  </header>
+
+  <div class="flex-1">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14 lg:py-16">
+      <!-- Hero -->
+      <section id="hero" class="grid gap-10 lg:grid-cols-2 items-center">
+        <div>
+          <h1 class="text-3xl sm:text-4xl font-semibold tracking-tight mb-4">Everything VOV in one place.</h1>
+          <p class="text-lg text-slate-700 mb-6">Book pujas and halls, register for classes, or make a donation to keep our seva strong.</p>
+          <div class="flex flex-col sm:flex-row gap-3">
+            <a href="/vov-prototypes/proto-b-seva-hub/bookings.html" class="inline-flex items-center justify-center rounded-lg bg-amber-600 px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-amber-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-amber-600 transition">Book a service</a>
+            <a href="#seva" class="inline-flex items-center justify-center rounded-lg border border-slate-300 bg-white px-4 py-2.5 text-sm font-semibold text-slate-700 hover:bg-slate-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-amber-600 transition">Make a donation</a>
+          </div>
+        </div>
+        <div class="rounded-3xl border border-slate-200 bg-white shadow-lg p-6 flex flex-col gap-4">
+          <div class="rounded-2xl bg-amber-50 border border-amber-100 p-4">
+            <h3 class="text-xl font-semibold mb-1">Bookings at a glance</h3>
+            <p class="text-sm text-slate-700">Puja, priest visit, hall, theatre. Live calendar and confirmations.</p>
+          </div>
+          <div class="rounded-2xl bg-slate-50 border border-slate-200 p-4">
+            <h3 class="text-xl font-semibold mb-1">Donations made simple</h3>
+            <p class="text-sm text-slate-700">Support the temple, Seniors’ Home, Montessori School, Medical Clinic, or Dialysis Centre & Hospital in Guyana.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- How can we help you today? -->
+      <section id="services" class="mt-14 sm:mt-16">
+        <h2 class="text-2xl sm:text-3xl font-semibold mb-4">How can we help you today?</h2>
+        <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm flex flex-col">
+            <div class="text-2xl mb-3">🙏</div>
+            <h3 class="text-xl font-semibold mb-2">Book a puja or priest visit</h3>
+            <p class="text-sm text-slate-700 flex-1">Home pujas, temple ceremonies, and special blessings.</p>
+            <a href="/vov-prototypes/proto-b-seva-hub/bookings.html" class="mt-4 inline-flex items-center justify-center rounded-lg bg-amber-600 px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-amber-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-amber-600 transition">Start booking</a>
+          </div>
+          <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm flex flex-col">
+            <div class="text-2xl mb-3">🎭</div>
+            <h3 class="text-xl font-semibold mb-2">Book a hall or theatre</h3>
+            <p class="text-sm text-slate-700 flex-1">Spacious halls and the VOV theatre for weddings and concerts.</p>
+            <a href="/vov-prototypes/proto-b-seva-hub/bookings.html" class="mt-4 inline-flex items-center justify-center rounded-lg bg-amber-600 px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-amber-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-amber-600 transition">Check availability</a>
+          </div>
+          <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm flex flex-col">
+            <div class="text-2xl mb-3">📚</div>
+            <h3 class="text-xl font-semibold mb-2">Register for a class</h3>
+            <p class="text-sm text-slate-700 flex-1">Dance, music, and Bal Vihar (Ages 6–12) sessions each term.</p>
+            <a href="#events-classes" class="mt-4 inline-flex items-center justify-center rounded-lg bg-amber-600 px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-amber-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-amber-600 transition">See classes</a>
+          </div>
+          <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm flex flex-col">
+            <div class="text-2xl mb-3">💛</div>
+            <h3 class="text-xl font-semibold mb-2">Donate to a cause</h3>
+            <p class="text-sm text-slate-700 flex-1">Support the temple, Seniors’ Home, Montessori School, Medical Clinic, and Dialysis Centre.</p>
+            <a href="#seva" class="mt-4 inline-flex items-center justify-center rounded-lg bg-amber-600 px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-amber-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-amber-600 transition">Donate now</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Quick info -->
+      <section id="quick-info" class="mt-14 sm:mt-16">
+        <div class="rounded-2xl border border-slate-200 bg-white shadow-sm grid gap-4 sm:grid-cols-2 lg:grid-cols-4 p-5">
+          <div class="flex items-start gap-3">
+            <div class="text-amber-700">🪔</div>
+            <div>
+              <h3 class="text-xl font-semibold mb-1">Today’s schedule</h3>
+              <p class="text-sm text-slate-700">Darshan 7:00–10:30 AM, 5:30–8:30 PM · Maha Aarti 7:15 PM.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-3">
+            <div class="text-amber-700">📅</div>
+            <div>
+              <h3 class="text-xl font-semibold mb-1">Upcoming events</h3>
+              <p class="text-sm text-slate-700">Garba Night Oct 12 · Diwali Maha Aarti Nov 1 · Gala Nov 15.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-3">
+            <div class="text-amber-700">🩺</div>
+            <div>
+              <h3 class="text-xl font-semibold mb-1">Clinic hours</h3>
+              <p class="text-sm text-slate-700">Medical Clinic open Sat 9:00 AM – 1:00 PM; appointments welcome.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-3">
+            <div class="text-amber-700">☎️</div>
+            <div>
+              <h3 class="text-xl font-semibold mb-1">Contact</h3>
+              <p class="text-sm text-slate-700">Email info@vovtemple.org · Call (905) 886-1724.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Our Seva in Action -->
+      <section id="seva" class="mt-14 sm:mt-16">
+        <h2 class="text-2xl sm:text-3xl font-semibold mb-4">Our Seva in Action</h2>
+        <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm flex flex-col">
+            <div class="h-28 rounded-xl bg-[url('/assets/seniors-home.jpg')] bg-cover bg-center mb-4"></div>
+            <h3 class="text-xl font-semibold mb-2">Seniors’ Home</h3>
+            <p class="text-sm text-slate-700 flex-1">Warm housing, meals, and activities for elder residents.</p>
+            <a href="#" class="mt-4 inline-flex items-center justify-center rounded-lg border border-slate-300 bg-white px-4 py-2.5 text-sm font-semibold text-slate-700 hover:bg-slate-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-amber-600 transition">Read more</a>
+          </div>
+          <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm flex flex-col">
+            <div class="h-28 rounded-xl bg-[url('/assets/montessori.jpg')] bg-cover bg-center mb-4"></div>
+            <h3 class="text-xl font-semibold mb-2">Montessori School</h3>
+            <p class="text-sm text-slate-700 flex-1">Hands-on learning with music, culture, and caring teachers.</p>
+            <a href="#" class="mt-4 inline-flex items-center justify-center rounded-lg border border-slate-300 bg-white px-4 py-2.5 text-sm font-semibold text-slate-700 hover:bg-slate-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-amber-600 transition">Read more</a>
+          </div>
+          <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm flex flex-col">
+            <div class="h-28 rounded-xl bg-[url('/assets/clinic.jpg')] bg-cover bg-center mb-4"></div>
+            <h3 class="text-xl font-semibold mb-2">Medical Clinic</h3>
+            <p class="text-sm text-slate-700 flex-1">Community health check-ups and guidance for families.</p>
+            <a href="#" class="mt-4 inline-flex items-center justify-center rounded-lg border border-slate-300 bg-white px-4 py-2.5 text-sm font-semibold text-slate-700 hover:bg-slate-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-amber-600 transition">Read more</a>
+          </div>
+          <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm flex flex-col">
+            <div class="h-28 rounded-xl bg-[url('/assets/guyana-hospital.jpg')] bg-cover bg-center mb-4"></div>
+            <h3 class="text-xl font-semibold mb-2">Dialysis & Hospital in Guyana</h3>
+            <p class="text-sm text-slate-700 flex-1">Life-saving dialysis and hospital care made possible by your support.</p>
+            <a href="#" class="mt-4 inline-flex items-center justify-center rounded-lg border border-slate-300 bg-white px-4 py-2.5 text-sm font-semibold text-slate-700 hover:bg-slate-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-amber-600 transition">Read more</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Upcoming Events & Classes -->
+      <section id="events-classes" class="mt-14 sm:mt-16 grid gap-8 lg:grid-cols-2">
+        <div>
+          <h2 class="text-2xl sm:text-3xl font-semibold mb-4">Upcoming events</h2>
+          <div class="space-y-4">
+            <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+              <div class="text-sm font-semibold text-amber-700 mb-2">October 12 · 7:00 PM</div>
+              <h3 class="text-xl font-semibold mb-2">Garba Night</h3>
+              <p class="text-sm text-slate-700">Live dhol, garba rounds, and prasad for all.</p>
+              <a href="#" class="mt-4 inline-flex items-center justify-center rounded-lg border border-slate-300 bg-white px-4 py-2.5 text-sm font-semibold text-slate-700 hover:bg-slate-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-amber-600 transition">View details</a>
+            </div>
+            <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+              <div class="text-sm font-semibold text-amber-700 mb-2">November 1 · 6:30 PM</div>
+              <h3 class="text-xl font-semibold mb-2">Diwali Maha Aarti</h3>
+              <p class="text-sm text-slate-700">Lamp lighting, bhajans, and fireworks in the courtyard.</p>
+              <a href="#" class="mt-4 inline-flex items-center justify-center rounded-lg border border-slate-300 bg-white px-4 py-2.5 text-sm font-semibold text-slate-700 hover:bg-slate-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-amber-600 transition">View details</a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h2 class="text-2xl sm:text-3xl font-semibold mb-4">Featured classes</h2>
+          <div class="space-y-4">
+            <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+              <h3 class="text-xl font-semibold mb-2">Bal Vihar (Ages 6–12)</h3>
+              <p class="text-sm text-slate-700">Stories, culture, and bhajans to ground young hearts.</p>
+              <a href="#" class="mt-4 inline-flex items-center justify-center rounded-lg bg-amber-600 px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-amber-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-amber-600 transition">Register</a>
+            </div>
+            <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+              <h3 class="text-xl font-semibold mb-2">Classical Dance – Beginner</h3>
+              <p class="text-sm text-slate-700">Foundations of rhythm, posture, and expression.</p>
+              <a href="#" class="mt-4 inline-flex items-center justify-center rounded-lg bg-amber-600 px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-amber-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-amber-600 transition">Register</a>
+            </div>
+            <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+              <h3 class="text-xl font-semibold mb-2">Bhajan & Music Workshop</h3>
+              <p class="text-sm text-slate-700">Learn harmonium, taal, and community singing.</p>
+              <a href="#" class="mt-4 inline-flex items-center justify-center rounded-lg bg-amber-600 px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-amber-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-amber-600 transition">Register</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Stay Connected -->
+      <section id="stay-connected" class="mt-14 sm:mt-16">
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <div class="grid gap-6 lg:grid-cols-2 items-center">
+            <div>
+              <h2 class="text-2xl sm:text-3xl font-semibold mb-3">Stay Connected</h2>
+              <p class="text-sm text-slate-700">Get updates on darshan times, seva needs, and new classes. We’ll share WhatsApp alerts and a monthly email digest.</p>
+              <button class="mt-4 inline-flex items-center justify-center rounded-lg border border-slate-300 bg-white px-4 py-2.5 text-sm font-semibold text-slate-700 hover:bg-slate-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-amber-600 transition">Join WhatsApp updates</button>
+            </div>
+            <form class="bg-slate-50 border border-slate-200 rounded-2xl p-5 grid gap-3">
+              <div>
+                <label class="text-sm font-semibold text-slate-800" for="name">Name</label>
+                <input id="name" type="text" class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2 text-sm focus:border-amber-500 focus:ring-amber-500" placeholder="Your name">
+              </div>
+              <div>
+                <label class="text-sm font-semibold text-slate-800" for="email">Email</label>
+                <input id="email" type="email" class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2 text-sm focus:border-amber-500 focus:ring-amber-500" placeholder="you@example.com">
+              </div>
+              <button type="button" class="inline-flex items-center justify-center rounded-lg bg-amber-600 px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-amber-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-amber-600 transition">Subscribe to email</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-slate-900 text-slate-100">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 grid gap-8 md:grid-cols-3">
+      <div>
+        <h3 class="text-xl font-semibold mb-2">Vishnu Mandir</h3>
+        <p class="text-sm text-slate-300">8640 Yonge St, Thornhill, ON · info@vovtemple.org · (905) 886-1724</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold mb-2">Quick links</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a class="hover:text-amber-400" href="#services">Book</a></li>
+          <li><a class="hover:text-amber-400" href="#events-classes">Events & Classes</a></li>
+          <li><a class="hover:text-amber-400" href="#seva">Donate</a></li>
+          <li><a class="hover:text-amber-400" href="#stay-connected">Newsletter</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold mb-2">Stay connected</h3>
+        <p class="text-sm text-slate-300 mb-3">Get WhatsApp updates for aarti times, events, and seva drives.</p>
+        <button class="inline-flex items-center justify-center rounded-lg bg-amber-600 px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-amber-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-amber-600 transition">Join WhatsApp updates</button>
+      </div>
+    </div>
+    <div class="border-t border-slate-800 py-4 text-center text-xs text-slate-400">Prototype design for Vishnu Mandir / VOV.</div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vishnu Mandir – Bookings Prototype</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-slate-50 text-slate-900 flex flex-col">
+  <!-- Prototype Banner -->
+  <div class="bg-amber-50 border-b border-amber-200 text-xs text-amber-900 py-2">
+    <div class="max-w-6xl mx-auto px-4 flex justify-between items-center">
+      <span>This is a design prototype for Vishnu Mandir / VOV – content and visuals are illustrative.</span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="bg-white/80 backdrop-blur border-b border-slate-200 sticky top-0 z-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="h-10 w-10 rounded-lg bg-gradient-to-br from-amber-600 to-teal-500 text-white flex items-center justify-center font-semibold">V</div>
+        <div>
+          <div class="text-base font-semibold text-slate-900">Vishnu Mandir</div>
+          <div class="text-xs text-slate-600">Voice of Vedas (VOV)</div>
+        </div>
+      </div>
+      <a href="/vov-prototypes/proto-b-seva-hub/index.html" class="inline-flex items-center justify-center rounded-lg border border-slate-300 bg-white px-4 py-2.5 text-sm font-semibold text-slate-700 hover:bg-slate-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-amber-600 transition">Back to hub</a>
+    </div>
+  </header>
+
+  <div class="flex-1">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14 lg:py-16 grid gap-10">
+      <header>
+        <h1 class="text-3xl sm:text-4xl font-semibold tracking-tight mb-4">Book a service</h1>
+        <p class="text-lg text-slate-700">Choose your service, pick a time, and share your details. We’ll confirm by email and WhatsApp.</p>
+      </header>
+
+      <!-- Step 1 -->
+      <section class="bg-white border border-slate-200 rounded-2xl shadow-sm p-6">
+        <h2 class="text-2xl sm:text-3xl font-semibold mb-4">1) Choose a service</h2>
+        <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <div class="rounded-xl border border-slate-200 p-4 hover:border-amber-500 transition cursor-pointer">
+            <h3 class="text-xl font-semibold mb-2">Temple Puja</h3>
+            <p class="text-sm text-slate-700">Book a puja in the mandir with prasad.</p>
+          </div>
+          <div class="rounded-xl border border-slate-200 p-4 hover:border-amber-500 transition cursor-pointer">
+            <h3 class="text-xl font-semibold mb-2">Priest Visit</h3>
+            <p class="text-sm text-slate-700">Home blessings and special rituals.</p>
+          </div>
+          <div class="rounded-xl border border-slate-200 p-4 hover:border-amber-500 transition cursor-pointer">
+            <h3 class="text-xl font-semibold mb-2">Hall or Theatre</h3>
+            <p class="text-sm text-slate-700">Reserve halls or the VOV theatre for events.</p>
+          </div>
+          <div class="rounded-xl border border-slate-200 p-4 hover:border-amber-500 transition cursor-pointer">
+            <h3 class="text-xl font-semibold mb-2">Bal Vihar / Class</h3>
+            <p class="text-sm text-slate-700">Register a child for Bal Vihar, dance, or music.</p>
+          </div>
+          <div class="rounded-xl border border-slate-200 p-4 hover:border-amber-500 transition cursor-pointer">
+            <h3 class="text-xl font-semibold mb-2">Special Ceremony</h3>
+            <p class="text-sm text-slate-700">Satyanarayan, Griha Pravesh, weddings, and more.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Step 2 -->
+      <section class="bg-white border border-slate-200 rounded-2xl shadow-sm p-6">
+        <h2 class="text-2xl sm:text-3xl font-semibold mb-4">2) Choose date & time</h2>
+        <div class="grid gap-4 md:grid-cols-2">
+          <div class="rounded-xl border border-slate-200 p-4">
+            <h3 class="text-xl font-semibold mb-2">Upcoming slots</h3>
+            <ul class="text-sm text-slate-700 space-y-2">
+              <li>Sat · Oct 12 · 10:00 AM</li>
+              <li>Sun · Oct 13 · 2:30 PM</li>
+              <li>Wed · Oct 16 · 6:00 PM</li>
+              <li>Fri · Oct 18 · 7:15 PM</li>
+            </ul>
+          </div>
+          <div class="rounded-xl border border-slate-200 p-4">
+            <h3 class="text-xl font-semibold mb-2">Notes</h3>
+            <p class="text-sm text-slate-700">We’ll confirm availability. For halls, include setup needs; for priest visits, share location and puja details.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Step 3 -->
+      <section class="bg-white border border-slate-200 rounded-2xl shadow-sm p-6">
+        <h2 class="text-2xl sm:text-3xl font-semibold mb-4">3) Your details</h2>
+        <form class="grid gap-4 md:grid-cols-2">
+          <div class="md:col-span-1">
+            <label class="text-sm font-semibold text-slate-800" for="full-name">Full name</label>
+            <input id="full-name" type="text" class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2 text-sm focus:border-amber-500 focus:ring-amber-500" placeholder="Your full name">
+          </div>
+          <div class="md:col-span-1">
+            <label class="text-sm font-semibold text-slate-800" for="phone">Phone</label>
+            <input id="phone" type="tel" class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2 text-sm focus:border-amber-500 focus:ring-amber-500" placeholder="(###) ###-####">
+          </div>
+          <div class="md:col-span-1">
+            <label class="text-sm font-semibold text-slate-800" for="email">Email</label>
+            <input id="email" type="email" class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2 text-sm focus:border-amber-500 focus:ring-amber-500" placeholder="you@example.com">
+          </div>
+          <div class="md:col-span-1">
+            <label class="text-sm font-semibold text-slate-800" for="notes">Notes</label>
+            <input id="notes" type="text" class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2 text-sm focus:border-amber-500 focus:ring-amber-500" placeholder="Service location, preferred time, etc.">
+          </div>
+          <div class="md:col-span-2 flex gap-3">
+            <button type="button" class="inline-flex items-center justify-center rounded-lg bg-amber-600 px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-amber-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-amber-600 transition">Submit request</button>
+            <a href="/vov-prototypes/proto-b-seva-hub/index.html" class="inline-flex items-center justify-center rounded-lg border border-slate-300 bg-white px-4 py-2.5 text-sm font-semibold text-slate-700 hover:bg-slate-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-amber-600 transition">Cancel</a>
+          </div>
+        </form>
+      </section>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-slate-900 text-slate-100">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 grid gap-8 md:grid-cols-3">
+      <div>
+        <h3 class="text-xl font-semibold mb-2">Vishnu Mandir</h3>
+        <p class="text-sm text-slate-300">8640 Yonge St, Thornhill, ON · info@vovtemple.org · (905) 886-1724</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold mb-2">Quick links</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a class="hover:text-amber-400" href="/vov-prototypes/proto-b-seva-hub/index.html">Services hub</a></li>
+          <li><a class="hover:text-amber-400" href="/vov-prototypes/proto-b-seva-hub/index.html#events-classes">Events & Classes</a></li>
+          <li><a class="hover:text-amber-400" href="/vov-prototypes/proto-b-seva-hub/index.html#seva">Donate</a></li>
+          <li><a class="hover:text-amber-400" href="/vov-prototypes/proto-b-seva-hub/index.html#stay-connected">Newsletter</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold mb-2">Stay connected</h3>
+        <p class="text-sm text-slate-300 mb-3">Get WhatsApp updates for aarti times, events, and seva drives.</p>
+        <button class="inline-flex items-center justify-center rounded-lg bg-amber-600 px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-amber-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-amber-600 transition">Join WhatsApp updates</button>
+      </div>
+    </div>
+    <div class="border-t border-slate-800 py-4 text-center text-xs text-slate-400">Prototype design for Vishnu Mandir / VOV.</div>
+  </footer>
+</body>
+</html>
